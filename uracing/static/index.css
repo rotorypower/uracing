@@ -1,3 +1,7 @@
 body {
     background-image: url("/media/image.png");
 }
+
+.urpost {
+    margin-bottom: 15px;
+}

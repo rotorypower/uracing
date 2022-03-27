@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    <div class="news-details">
+        <div class="col-9 news-item">
+            <div class="news-card">
+                {% if post.image %}
+                    <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.title }}">
+                {% endif %}
+                <div class="news-body">
+                    <h5 class="news-title">{{ post.title }}</h5>
+                    <p class="news-text">{{ post.text }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
