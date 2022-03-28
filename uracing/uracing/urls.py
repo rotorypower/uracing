@@ -2,6 +2,7 @@ from django.conf import settings
 from django.contrib import admin
 from django.urls import path
 
+from racewars.views import foto
 from topdriver.views import topdriverstime
 from trackday.views import trackday_post, post_view
 from uracing.views import register
@@ -10,6 +11,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('', trackday_post, name='home'),
+    path('racewars/', foto, name='contentracewars'),
     path('toplaptime/', topdriverstime, name='toplaptime'),
     path('register/', register, name='register'),
     path('news/<int:post_id>/', post_view, name="post_new"),

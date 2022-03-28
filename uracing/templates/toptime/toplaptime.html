@@ -4,14 +4,15 @@
 {% block content %}
     <div class="purchases">
         <h1>ТОР ПИЛОТЫ URACING</h1>
-        <table cellpadding="3" cellspacing="2" border="4" width="100%"
-               class="table">
+        <table class="table table-bordered">
+        <thead>
             <tr>
                 <th>Лучшее время</th>
                 <th>Пилот</th>
                 <th>Автомобиль</th>
                 <th>Привод</th>
             </tr>
+        </thead>
             {% for toptime in toptimes %}
                 <tr>
                     <td>{{ toptime.time }}</td>

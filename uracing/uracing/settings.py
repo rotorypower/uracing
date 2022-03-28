@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'uracing',
     'trackday',
     'topdriver',
+    'racewars',
 ]
 
 MIDDLEWARE = [
