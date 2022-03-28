@@ -10,8 +10,8 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('', trackday_post, name='home'),
-    path('toplaptime', topdriverstime),
-    path('register/', register),
+    path('toplaptime/', topdriverstime, name='toplaptime'),
+    path('register/', register, name='register'),
     path('news/<int:post_id>/', post_view, name="post_new"),
 
 ]

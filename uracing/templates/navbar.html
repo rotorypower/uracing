@@ -1,10 +1,10 @@
 {% load static %}
 <nav class="navbar navbar-light" style="background-color: khaki;">
     <nav class="nav">
-        <a class="nav-link active" aria-current="page" href="#">Uracing</a>
-        <a class="nav-link" href="#">Trackdays</a>
-        <a class="nav-link" href="#">RaceWars</a>
-        <a class="nav-link" href="#">TOP</a>
-        <a class="nav-link" href="#">Register</a>
+        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Uracing</a>
+        <a class="nav-link active" href="{% url 'home' %}">Trackdays</a>
+        <a class="nav-link active" href="#">RaceWars</a>
+        <a class="nav-link active" href="{% url 'toplaptime' %}">TOP</a>
+        <a class="nav-link active" href="{% url 'register' %}">Register</a>
     </nav>
 </nav>
